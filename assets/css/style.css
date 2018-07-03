@@ -1,0 +1,114 @@
+.bg-gradient{
+  background: #348F50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.liste ul li a{
+  color:#fff;
+}
+.alertt{
+  display: none;
+}
+
+.urun .card {
+  min-height: 200px;
+}
+.bg-flu{
+  background-color: rgba(255 ,255,255,0.7);
+}
+.ayva{
+  background-image: url("../../img/urunler/ayva.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+.ananas{
+  background-image: url("../../img/urunler/ananas.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.domates{
+  background-image: url("../../img/urunler/domates.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.elma{
+  background-image: url("../../img/urunler/elma.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.cilek{
+  background-image: url("../../img/urunler/cilek.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.greyfurt{
+  background-image: url("../../img/urunler/greyfurt.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.nar{
+  background-image: url("../../img/urunler/nar.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.turp{
+  background-image: url("../../img/urunler/turp.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.a_c{}
+.d_f{}
+.g_i{}
+.j_m{}
+.n_p{}
+.r_t{}
+.u_v{}
+.y_z{}
+
+.material-icons, .icon-text, .icon-text-caps, .icon-text-tweaked {
+  vertical-align: middle;
+  text-decoration: none  !important;
+  font-size:2em;
+}
+.material-icons, .icon-text, .icon-text-caps, .icon-text-tweaked :hover :focus{
+    text-decoration: none !important;
+ }
+.icon-text-caps, .icon-text-tweaked {
+  text-transform: uppercase;
+}
+.icon-text-tweaked {
+  position:relative;
+  top:1px;
+}
+.oval{
+  border-radius: 9px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color: #7950f2;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%236741D9' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+.oval2{
+  border-radius: 9px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color: #E91E63;
+  background-image: -webkit-radial-gradient(rgba(136,14,79,1) 20%, rgba(0,0,0,0) 16%);
+  background-image: -moz-radial-gradient(rgba(136,14,79,1) 20%, rgba(0,0,0,0) 16%);
+  background-image: radial-gradient(rgba(136,14,79,1) 20%, rgba(0,0,0,0) 16%);
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
+}
+.oval3{
+  border-radius: 9px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color: #E64A19;
+  background-image: url("../../img/9df7fd9e.png");
+}

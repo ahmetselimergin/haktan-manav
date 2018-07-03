@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Gelen Siparişler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.theme.css">
+
+    <!--===============================================================================================-->
+</head>
+<body class="bg-light">
+<!--navigasyon section-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+    <a class="navbar-brand" href="admin-dashboard.html">Firma Adı</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="admin_index.html">Gelen Siparişler<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link " href="toplam.html">Toplam Siparişler </a>
+
+            <!--<a href="profile.html" class="nav-item nav-link ml-auto text-center"><i class="material-icons ">account_box</i></a>-->
+            <a class="nav-item nav-link" id="tarihSecici"><i class="material-icons text-light">date_range</i></a>
+
+            <a href="admin.html" class="nav-item nav-link ml-auto text-light" ><i class="material-icons">input</i></a>
+
+        </div>
+    </div>
+</nav>
+<!--./navigation section end-->
+
+<div class="container-fluid mt-3" id="printableArea ">
+    <div class="row">
+        <div onclick="openDash('uyelik')" class="col-lg-4 col-md-4 col-sm-12 mt-2 ">
+            <div>
+                <div class="card  oval">
+                    <div  class="collapse show" >
+                        <div class="card-body text-center">
+                            <i class='material-icons text-light'>people</i>
+                            <a class='icon-text text-light text-uppercase'>&nbsp;ÜYE İŞLEMLERİ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="openDash('urunler')" class="col-lg-4 col-md-4 col-sm-12 mt-2 ">
+            <div>
+                <div class="card  oval2">
+                    <div  class="collapse show" >
+                        <div class="card-body text-center">
+                            <i class='material-icons text-light'>bubble_chart</i>
+                            <a  class='icon-text text-light text-uppercase'>&nbsp;Ürün işlemleri</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="openDash('mesajlar')" class="col-lg-4 col-md-4 col-sm-12 mt-2 ">
+            <div>
+                <div class="card  oval3">
+                    <div  class="collapse show" >
+                        <div class="card-body text-center">
+                            <i class='material-icons text-light'>mail</i>
+                            <a  class='icon-text text-light text-uppercase '>&nbsp;Mesajlar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+</div>
+<div class="container " style="margin-bottom: 200px">
+
+    <div class="row">
+        <!--üye ekleme ve silme kısımları-->
+        <div class="col-12 dash mt-2" id="uyelik">
+            <form class="form-inline row">
+                <div class="form-group col-lg-5 col-md-5 col-sm-12  mb-2">
+                    <label for="userName" class="sr-only">Kullanıcı Adı</label>
+                    <input type="text" class="form-control w-100" id="userName" placeholder="Kullanıcı Adı">
+                </div>
+                <div class="form-group col-lg-5 col-md-5 col-sm-12  mb-2">
+                    <label for="userParola" class="sr-only">Parola</label>
+                    <input type="password" class="form-control w-100" id="userParola" placeholder="Parola">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2 col-lg-2 col-md-2 col-sm-12 w-100">Üye Ekle</button>
+            </form>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Kullanıcı Adı</th>
+                            <th scope="col">Şifre</th>
+                            <th scope="col">Sil</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>123456</td>
+                            <td><a href="#"><i class="material-icons text-danger">delete_forever</i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>1qa2ws</td>
+                            <td><a href="#"><i class="material-icons  text-danger">delete_forever</i></a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>qee123</td>
+                            <td><a href="#"><i class="material-icons text-danger">delete_forever</i></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--ürün ekleme kısmı-->
+        <div class="col-12 dash mt-2" id="urunler" style="display: none;">
+            <form class="form-inline row">
+                <div class="form-group col-lg-5 col-md-5 col-sm-12  mb-2">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="urunResmi">
+                        <label class="custom-file-label" for="urunResmi">Ürün resmi seçiniz (200*200 px)</label>
+                    </div>
+                </div>
+                <div class="form-group col-lg-5 col-md-5 col-sm-12  mb-2">
+                    <label for="urunAdi" class="sr-only">Ürün Adı</label>
+                    <input type="text" class="form-control w-100" id="urunAdi" placeholder="Ürün Adını Giriniz">
+                </div>
+                <button type="submit" class="btn btn-success mb-2 col-lg-2 col-md-2 col-sm-12 w-100">Ürün Ekle</button>
+            </form>
+        </div>
+        <!--gelen mesajlar kısmı-->
+        <div class="col-12 dash mt-2" id="mesajlar"  style="display: none;">
+            <div class="row">
+                <div class="col-12 my-3">
+                    <div class="card">
+                        <div class="card-header border-bottom border-danger ">
+                            Labei's Cafe  | 02.03.2018 - 19:26
+                        </div>
+                        <div class="card-body border-bottom border-success">
+                            <p class="card-text">Müşterilerden gelen mesajlar bu kısmımda görünecekir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-3">
+                    <div class="card">
+                        <div class="card-header border-bottom border-danger">
+                            Cafe 3,5  | 05.03.2018 - 19:26
+                        </div>
+                        <div class="card-body border-bottom border-success">
+                            <p class="card-text">Müşterilerden gelen mesajlar bu kısmımda görünecekir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-3">
+                    <div class="card">
+                        <div class="card-header border-bottom border-danger">
+                            Labei's Cafe  | 02.03.2018 - 19:26
+                        </div>
+                        <div class="card-body border-bottom border-success">
+                            <p class="card-text">Müşterilerden gelen mesajlar bu kısmımda görünecekir.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 my-3">
+                    <div class="card">
+                        <div class="card-header border-bottom border-danger">
+                            Labei's Cafe  | 02.03.2018 - 19:26
+                        </div>
+                        <div class="card-body border-bottom border-success">
+                            <p class="card-text">Müşterilerden gelen mesajlar bu kısmımda görünecekir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer bg-gradient py-4 fixed-bottom">
+    <div class="container-fluid">
+        <span class="text-muted text-light">This Website Designed by </span>
+        <a href="http://www.redwhitesoft.com" class="text-light ">Red White Software & Games</a>
+    </div>
+</footer>
+
+<!--===============================================================================================-->
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+    function openDash(dashName) {
+        var i;
+        var x = document.getElementsByClassName("dash");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(dashName).style.display = "block";
+    }
+</script>
+
+<!--===============================================================================================-->
+
+</body>
+</html>
